@@ -1,4 +1,4 @@
-/* @hash 2b8089eacf9f9d8cbc8226bc5e4372e6 */
+/* @hash 5b83cf4283ce35be72ed6a04595fac64 */
 // tslint:disable
 /* eslint-disable */
 export * from './types';
@@ -7,6 +7,9 @@ export * from './client';
 export * from './FeatureTest/contract';
 export * from './FeatureTest/types';
 export * from './FeatureTest/abi';
+export * from './GASVac/contract';
+export * from './GASVac/types';
+export * from './GASVac/abi';
 export * from './ICO/contract';
 export * from './ICO/types';
 export * from './ICO/abi';
