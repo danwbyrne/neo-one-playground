@@ -1,9 +1,9 @@
-/* @hash df273d66c7d646f6348f8d5ad0f6023a */
+/* @hash 855a79c0fabbc477f8b50911ca5517f0 */
 // tslint:disable
 /* eslint-disable */
 import { Client, ReadClient, SmartContractDefinition } from '@neo-one/client';
-import { icoABI } from './abi';
-import { ICOReadSmartContract, ICOSmartContract } from './types';
+import { oneABI } from './abi';
+import { ONEReadSmartContract, ONESmartContract } from './types';
 import { sourceMaps } from '../sourceMaps';
 
 const definition: SmartContractDefinition = {
@@ -12,15 +12,15 @@ const definition: SmartContractDefinition = {
       address: 'AZZ6U62JTJU26HCjp3bACCZRs2PMT3mdLK',
     },
   },
-  abi: icoABI,
+  abi: oneABI,
   sourceMaps,
 };
 
-export const createICOSmartContract = (client: Client): ICOSmartContract =>
-  client.smartContract<ICOSmartContract>(definition);
+export const createONESmartContract = (client: Client): ONESmartContract =>
+  client.smartContract<ONESmartContract>(definition);
 
-export const createICOReadSmartContract = (client: ReadClient): ICOReadSmartContract =>
-  client.smartContract<ICOReadSmartContract>({
+export const createONEReadSmartContract = (client: ReadClient): ONEReadSmartContract =>
+  client.smartContract<ONEReadSmartContract>({
     address: definition.networks[client.dataProvider.network].address,
     abi: definition.abi,
     sourceMaps: definition.sourceMaps,

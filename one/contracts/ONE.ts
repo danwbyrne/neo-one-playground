@@ -37,7 +37,7 @@ interface TokenPayableContract {
   readonly onRevokeSendTransfer: (from: Address, amount: Fixed<0>, asset: Address) => void;
 }
 
-export class ICO extends SmartContract {
+export class ONE extends SmartContract {
   public readonly properties = {
     codeVersion: '1.0',
     author: 'dicarlo2',
@@ -119,7 +119,7 @@ export class ICO extends SmartContract {
     return true;
   }
 
-  public approveSendTransfer(from: Address, to: Address, amount: Fixed<0>): boolean {
+  public approveSendTransfer(from: Address, to: Address, amount: Fixed<8>): boolean {
     if (amount < 0) {
       throw new Error(`Amount must be greater than 0: ${amount}`);
     }

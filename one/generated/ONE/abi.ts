@@ -1,9 +1,9 @@
-/* @hash c757299779c0252e65415799d6ca5572 */
+/* @hash 7651b90bdaf7fc7cd034af674e3b6ec6 */
 // tslint:disable
 /* eslint-disable */
 import { ABI } from '@neo-one/client';
 
-export const icoABI: ABI = {
+export const oneABI: ABI = {
   events: [
     {
       name: 'transfer',
@@ -235,7 +235,7 @@ export const icoABI: ABI = {
           type: 'Address',
         },
         {
-          decimals: 0,
+          decimals: 8,
           name: 'amount',
           optional: false,
           type: 'Integer',
